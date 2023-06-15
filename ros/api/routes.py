@@ -14,7 +14,7 @@ from .v1.hosts import (
 
 # Initialize Routes
 def initialize_routes(api):
-    api.add_resource(Status, '/api/ros/v1/status')
+    api.add_resource(Status, '/api/ros/v1/statuss')
     api.add_resource(IsROSConfiguredApi, '/api/ros/v1/is_configured')
     api.add_resource(HostsApi, '/api/ros/v1/systems')
     api.add_resource(HostHistoryApi, '/api/ros/v1/systems/<host_id>/history')
